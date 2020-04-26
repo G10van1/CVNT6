@@ -2057,7 +2057,7 @@ header .logo a {
 				}
 	}
 
-	/* make sure the menu is visible on larger screens
+/* make sure the menu is visible on larger screens
  * ------------------------------------------------------------------- */
 	@media only screen and (min-width:769px) {
 		#main-nav-wrap ul.main-navigation {
@@ -2065,7 +2065,7 @@ header .logo a {
 		}
 	}
 
-	/* ------------------------------------------------------------------- 
+/* ------------------------------------------------------------------- 
  * search wrap - (_layout.css) 
  * ------------------------------------------------------------------- */
 	.search-wrap {
