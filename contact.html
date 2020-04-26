@@ -43,7 +43,12 @@
 			<div class="logo">
 				<a href="index.html">Author</a>
 			</div>
-
+			<input type="checkbox" id="bt_menu">
+			<div class="triggers">
+				<div class="menu-toggle">
+					<label for="bt_menu">&#9776;</label>
+				</div>
+			</div> <!-- end triggers -->
 			<nav id="main-nav-wrap">
 				<ul class="main-navigation sf-menu">
 					<li><a href="index.html" title="">Home</a></li>
@@ -52,6 +57,13 @@
 					<li><a href="saibamais.html" title="">Saiba Mais</a></li>
 				</ul>
 			</nav> <!-- end main-nav-wrap -->
+
+			<div class="triggers">
+				<div class="menu-toggle">
+					<input type="checkbox" id="bt_menu">
+					<label for="bt_menu">&#9776;</label>
+				</div>
+			</div> <!-- end triggers -->
 		</div>
 
 	</header> <!-- end header -->
@@ -60,11 +72,8 @@
 	<section id="content-wrap" class="site-page">
 		<div class="row">
 			<div class="col-twelve">
-
 				<section>
-
 					<div class="primary-content">
-
 						<h1 class="entry-title add-bottom">Entre em contato</h1>
 						<div class="row">
 							<div class="col-six tab-full">
@@ -79,39 +88,33 @@
 
 						</div>
 
-						<form name="cForm" id="cForm" method="post" action="">
+						<form name="cForm" id="cForm" method="post" action="sendemail.php">
 							<fieldset>
 
 								<div class="form-field">
-									<input name="cName" type="text" id="cName" class="full-width" placeholder="Seu Nome" value="">
+									<input name="cName" type="text" id="cName" class="full-width" placeholder="Nome" value="">
 								</div>
 
 								<div class="form-field">
-									<input name="cEmail" type="text" id="cEmail" class="full-width" placeholder="Seu Email" value="">
+									<input name="cEmail" type="text" id="cEmail" class="full-width" placeholder="Email" value="">
 								</div>
 
 								<div class="form-field">
-									<input name="cWebsite" type="text" id="cWebsite" class="full-width" placeholder="Website" value="">
+									<input name="cFone" type="text" id="cFone" class="full-width" placeholder="Fone" value="">
 								</div>
 
 								<div class="message form-field">
-									<textarea name="cMessage" id="cMessage" class="full-width" placeholder="Sua Mensagem"></textarea>
+									<textarea name="cMessage" id="cMessage" class="full-width" placeholder="Mensagem"></textarea>
 								</div>
 
-								<button type="submit" class="submit button-primary full-width-on-mobile">Enviar</button>
+								<button type="submit" class="button send email" name="send">Enviar</button>
 
 							</fieldset>
 						</form> <!-- end form -->
-
+					</div>
 				</section>
-
-
 			</div> <!-- end col-twelve -->
 		</div> <!-- end row -->
-	</section> <!-- end content -->
-	<!-- footer
-	================================================== -->
-	
+	</section> <!-- end content -->	
 </body>
-
 </html>
