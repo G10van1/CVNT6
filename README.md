@@ -5,6 +5,7 @@ Site html com as 6 principais notícias sobre COVID-19.
 
 ## Ferramentas
 HTML
+
 CSS
 
 ## Deploy
